@@ -1,0 +1,49 @@
+
+{
+  "mcpServers": {
+    "google-maps": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-google-maps"
+      ],
+      "env": {
+        "GOOGLE_MAPS_API_KEY": ""
+      }
+    },
+
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+       "env": {
+         "BRAVE_API_KEY": ""
+      }
+    },
+  
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+          "SLACK_BOT_TOKEN": "",
+          "SLACK_TEAM_ID": ""
+       }
+    },
+
+    "google-calendar": {
+      "command": "node",
+      "args": ["/index.js"]
+    },
+
+    "line-bot": {
+      "command": "node",
+      "args": [
+        "/index.js"
+      ],
+      "env": {
+        "CHANNEL_ACCESS_TOKEN": "",
+        "DESTINATION_USER_ID": ""
+      }
+    }
+  }
+}
+
