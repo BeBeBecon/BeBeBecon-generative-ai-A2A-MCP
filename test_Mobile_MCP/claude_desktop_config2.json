@@ -1,0 +1,12 @@
+
+{
+  "mcpServers": {
+    
+    "mobile-mcp": {
+      "command": "/bin/zsh",
+      "args": ["/start_mcp.zsh"]
+    }
+    
+  }
+}
+
